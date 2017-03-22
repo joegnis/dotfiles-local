@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles:
+        path: ""
+    ~/.vimrc_local:
+    ~/.vimrc_local_plugins:
+    ~/.zsh/antigenrc_local:
+        path: zsh/antigenrc_local
+    ~/.shell/shellrc_local_after:
+        path: shell/shellrc_local_after
