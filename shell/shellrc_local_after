@@ -31,6 +31,9 @@ alias lsvirtualenv='pyenv virtualenvs'
 alias rmvirtualenv='pyenv uninstall'
 alias deactivate='pyenv deactivate'
 
+# Tex Live
+export PATH="/opt/texbin:$PATH"
+
 # tmuxifier init
 eval "$(tmuxifier init -)"
 
