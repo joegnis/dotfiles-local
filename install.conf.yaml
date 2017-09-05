@@ -6,7 +6,7 @@
 - clean: ['~']
 
 - link:
-    ~/.dotfiles:
+    ~/.dotfiles_local:
         path: ""
     ~/.vimrc_local:
     ~/.vimrc_local_plugins:
