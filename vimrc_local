@@ -12,6 +12,7 @@ let g:syntastic_html_checkers = ['eslint']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_markdown_checkers = ['mdl']
 let g:syntastic_vim_checkers = ['vint']
+let g:syntastic_sh_checkers = ['ShellCheck']
 
 let g:syntastic_mode_map = {
     \ "mode": "active",
@@ -45,8 +46,8 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
-let g:UltiSnipsExpandTrigger = '<c-j>' 
-let g:UltiSnipsJumpForwardTrigger  = '<c-j>' 
+let g:UltiSnipsExpandTrigger = '<c-j>'
+let g:UltiSnipsJumpForwardTrigger  = '<c-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<c-k>'
 let g:UltiSnipsListSnippets = '<c-l>'
 
@@ -107,7 +108,7 @@ endfunction
 
 function! LightlineFugitive()
     try
-        if expand('%:t') !~? 'Tagbar\|NERD' && exists('*fugitive#head') 
+        if expand('%:t') !~? 'Tagbar\|NERD' && exists('*fugitive#head')
             let mark = ' '
             let branch = fugitive#head()
             return branch !=# '' ? mark.branch : ''
@@ -119,7 +120,7 @@ endfunction
 
 function! LightlineFilename()
     let fname = expand('%:t')
-    return fname == 'ControlP' && has_key(g:lightline, 'ctrlp_item') ? g:lightline.ctrlp_item : 
+    return fname == 'ControlP' && has_key(g:lightline, 'ctrlp_item') ? g:lightline.ctrlp_item :
           \ fname == '__Tagbar__' ? g:lightline.fname :
           \ fname =~ 'NERD_tree' ? '' :
           \ ('' != LightlineReadonly() ? LightlineReadonly() . ' ' : '') .
@@ -147,7 +148,7 @@ function! LightlineMode()
     let fname = expand('%:t')
     return fname == '__Tagbar__' ? 'Tagbar' :
           \ fname == 'ControlP' ? 'CtrlP' :
-          \ fname =~ 'NERD_tree' ? 'NERDTree' : 
+          \ fname =~ 'NERD_tree' ? 'NERDTree' :
           \ winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
