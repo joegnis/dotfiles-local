@@ -1,3 +1,13 @@
+# X11 system clipboard
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+# Tex Live
+export PATH="/opt/texbin:$PATH"
+
+# ============================================================================
+# => Fedora
+# ============================================================================
 # Use full-featured vim
 alias vim='vimx'
 
@@ -10,11 +20,5 @@ export BROWSER="google-chrome-stable"
 # Java Home
 export JAVA_HOME="/usr/lib/jvm/java-openjdk"
 
-# X11 system clipboard
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-
-# Tex Live
-export PATH="/opt/texbin:$PATH"
 
 # vim: ft=sh
