@@ -14,6 +14,7 @@
         path: zsh/antigenrc_local
     ~/.shell/shellrc_local_after:
         path: shell/shellrc_local_after
+    ~/.bashrc_local_before:
     # tmux
     ~/.tmux/tmux_conf_local:
         path: tmux/tmux_conf_local
