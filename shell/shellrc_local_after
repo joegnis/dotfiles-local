@@ -6,19 +6,12 @@ alias pbpaste='xclip -selection clipboard -o'
 export PATH="/opt/texbin:$PATH"
 
 # ============================================================================
-# => Fedora
+# => Ubuntu
 # ============================================================================
-# Use full-featured vim
-alias vim='vimx'
-
 # Default editor
-export EDITOR=vimx
+export EDITOR=vim
 
 # Set BROWSER
-export BROWSER="google-chrome-stable"
-
-# Java Home
-export JAVA_HOME="/usr/lib/jvm/java-openjdk"
-
+export BROWSER="chromium-browser"
 
 # vim: ft=sh
