@@ -14,13 +14,7 @@ export JAVA_HOME="/usr/lib/jvm/java-openjdk"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
-# tmuxifier
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-
 # Tex Live
 export PATH="/opt/texbin:$PATH"
-
-# tmuxifier init
-eval "$(tmuxifier init -)"
 
 # vim: ft=sh
