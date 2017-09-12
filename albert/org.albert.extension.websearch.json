@@ -1,0 +1,142 @@
+[
+    {
+        "enabled": true,
+        "iconPath": ":google",
+        "name": "Google",
+        "trigger": "g",
+        "url": "https://www.google.com/search?q=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":youtube",
+        "name": "Youtube",
+        "trigger": "yt ",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":amazon",
+        "name": "Amazon",
+        "trigger": "amz",
+        "url": "http://www.amazon.com/s/?field-keywords=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":ebay",
+        "name": "Ebay",
+        "trigger": "eb ",
+        "url": "http://www.ebay.com/sch/i.html?_nkw=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":default",
+        "name": "Baidu",
+        "trigger": "bd",
+        "url": "http://www.baidu.com/s?wd=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":github",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/Douban-0.png",
+        "name": "Douban",
+        "trigger": "douban",
+        "url": "https://www.douban.com/search?q=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":wolfram",
+        "name": "Wolfram Alpha",
+        "trigger": "=",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":default",
+        "name": "Bangumi",
+        "trigger": "bgm",
+        "url": "http://bgm.tv/subject_search/%s?cat=all"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/Dmhy-0.png",
+        "name": "Dmhy",
+        "trigger": "dmhy",
+        "url": "http://share.dmhy.org/topics/list?keyword=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":default",
+        "name": "aniDB",
+        "trigger": "anidb",
+        "url": "http://anidb.net/perl-bin/animedb.pl?show=search&do=fulltext&adb.search=%s&entity.animetb=1&entity.chartb=1&entity.clubtb=1&entity.collectiontb=1&entity.creatortb=1&entity.eptb=1&entity.grouptb=1&entity.songtb=1&entity.tagdatatb=1&field.titles=1&do.fsearch=Search"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":default",
+        "name": "TSDM",
+        "trigger": "tsdm",
+        "url": "https://www.google.com/search?q=%s+site%3Atsdm.me"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/U2-0.png",
+        "name": "U2",
+        "trigger": "u2",
+        "url": "https://u2.dmhy.org/torrents.php?search=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": ":default",
+        "name": "Moegirl",
+        "trigger": "moe",
+        "url": "https://zh.moegirl.org/index.php?search=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/Wikipedia-0.svg",
+        "name": "Wikipedia",
+        "trigger": "wiki",
+        "url": "http://en.wikipedia.org/w/index.php?search=%s&go=Go"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/WeChat-0.svg",
+        "name": "WeChat",
+        "trigger": "wechat",
+        "url": "http://weixin.sogou.com/weixin?type=2&query=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/startdew-valley.png",
+        "name": "Stardew Valley",
+        "trigger": "star",
+        "url": "http://stardewvalleywiki.com/mediawiki/index.php?search=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/Bulbapedia-0.png",
+        "name": "Bulbapedia",
+        "trigger": "poke",
+        "url": "https://bulbapedia.bulbagarden.net/w/index.php?search=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/pokemon-wiki.png",
+        "name": "Pokemon Wiki",
+        "trigger": "52",
+        "url": "https://wiki.52poke.com/index.php?search=%s"
+    },
+    {
+        "enabled": true,
+        "iconPath": "/home/yifan/Pictures/icons/zh-wikipeida.svg",
+        "name": "中文维基百科",
+        "trigger": "wikicn",
+        "url": "https://zh.wikipedia.org/w/index.php?search=%s"
+    }
+]
