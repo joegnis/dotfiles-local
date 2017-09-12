@@ -1,2 +1,3 @@
-antigen theme ~/.zsh/themes amuse_venv
+# antigen theme ~/.zsh/themes amuse_venv
+antigen theme ~/.zsh/themes honukai
 # vim: ft=zsh
