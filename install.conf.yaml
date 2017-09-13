@@ -25,3 +25,8 @@
         path: albert/org.albert.extension.websearch.json
     ~/.config/albert.conf:
         path: albert/albert.conf
+    # texlive
+    ~/.texlive/texlive.profile:
+        path: texlive/texlive.profile
+    ~/.texlive/template_zh.tex:
+        path: texlive/template_zh.tex
