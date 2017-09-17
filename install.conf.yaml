@@ -30,3 +30,6 @@
         path: texlive/texlive.profile
     ~/.texlive/template_zh.tex:
         path: texlive/template_zh.tex
+
+- shell:
+    - [git submodule update --remote dotbot, Updating dotbot]
