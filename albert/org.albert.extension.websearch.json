@@ -114,9 +114,9 @@
         "url": "https://bulbapedia.bulbagarden.net/w/index.php?search=%s"
     },
     {
-        "iconPath": "/home/yifan/.local/share/albert/org.albert.extension.websearch/{9a3242cc-2d67-4ad4-a366-c4b007be5fb3}.png",
+        "iconPath": "/home/yifan/.config/albert/org.albert.extension.websearch/{4d4fe0cf-ec2e-4495-8dde-01173c2eca96}.png",
         "name": "Pokemon Wiki",
-        "trigger": "52",
+        "trigger": "zhpoke",
         "url": "https://wiki.52poke.com/index.php?search=%s"
     },
     {
