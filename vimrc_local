@@ -23,8 +23,10 @@ let g:ycm_filetype_specific_completion_to_disable = {
       \ 'gitcommit': 1,
       \ 'python': 1,
       \}
-let g:ycm_python_binary_path = '/usr/bin/python3'
-let g:ycm_server_python_interpreter = '/usr/bin/python3'
+" Specify the Python interpreter to use to get completions (jedi)
+let g:ycm_python_binary_path = expand("~/.pyenv/versions/3.6.5/bin/python")
+" The Python interpreter used by the ycmd server
+let g:ycm_server_python_interpreter = expand("~/.pyenv/versions/3.6.5/bin/python")
 let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
 let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
@@ -33,7 +35,7 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 
 " lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ ['mode', 'paste'], ['fugitive', 'filename'], ['ctrlpmark'] ],
       \   'right': [ [ 'syntastic', 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ], ['obsession'] ]
@@ -175,5 +177,3 @@ endfunction
 augroup UpdateLightline
     autocmd CursorHold,BufWritePre,BufEnter * call lightline#update()
 augroup END
-
-

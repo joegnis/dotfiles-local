@@ -1,6 +1,13 @@
 " Plugins only installed locally, through vim-plug
 " Coding
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'on': [] }
 
 " UI
 Plug 'itchyny/lightline.vim' " light powerline
+
+" Load some plugins the first time entering insert mode
+augroup load_after_insert_local
+  autocmd!
+  autocmd InsertEnter * call plug#load('YouCompleteMe')
+            \| autocmd! load_after_insert_local
+augroup END
