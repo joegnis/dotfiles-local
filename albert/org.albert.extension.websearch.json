@@ -1,15 +1,15 @@
 [
     {
-        "iconPath": "/home/yifan/.local/share/albert/org.albert.extension.websearch/{a3be96f9-38e1-4ac4-896c-2ce80dc30379}.",
-        "name": "Get Favicon",
-        "trigger": "favicon",
-        "url": "https://www.google.com/s2/favicons?domain=%s"
-    },
-    {
         "iconPath": ":google",
         "name": "Google",
         "trigger": "g",
         "url": "https://www.google.com/search?q=%s"
+    },
+    {
+        "iconPath": "/home/yifan/.local/share/albert/org.albert.extension.websearch/{a3be96f9-38e1-4ac4-896c-2ce80dc30379}.",
+        "name": "Get Favicon",
+        "trigger": "favicon",
+        "url": "https://www.google.com/s2/favicons?domain=%s"
     },
     {
         "iconPath": ":youtube",
@@ -72,10 +72,10 @@
         "url": "http://anidb.net/perl-bin/animedb.pl?show=search&do=fulltext&adb.search=%s&entity.animetb=1&entity.chartb=1&entity.clubtb=1&entity.collectiontb=1&entity.creatortb=1&entity.eptb=1&entity.grouptb=1&entity.songtb=1&entity.tagdatatb=1&field.titles=1&do.fsearch=Search"
     },
     {
-        "iconPath": "/home/yifan/.local/share/albert/org.albert.extension.websearch/{8cbdb592-4eb7-4043-bb6d-833e97d1a84a}.png",
+        "iconPath": "/home/yifan/.config/albert/org.albert.extension.websearch/{32d7ec1e-0f89-4d1b-9f36-11dfcc34a500}.png",
         "name": "TSDM",
         "trigger": "tsdm",
-        "url": "https://www.google.com/search?q=%s+site%3Atsdm.me"
+        "url": "https://www.google.com/search?q=%s+site%3Atsdm.me++-site%3Atsdm.me%2Farchiver"
     },
     {
         "iconPath": "/home/yifan/.local/share/albert/org.albert.extension.websearch/{b585ca5d-19e8-4618-98e8-141aee265704}.png",
@@ -84,10 +84,10 @@
         "url": "https://u2.dmhy.org/torrents.php?search=%s"
     },
     {
-        "iconPath": "/home/yifan/.local/share/albert/org.albert.extension.websearch/{0275204f-a5d5-4a27-9899-3088fea54186}.png",
+        "iconPath": "/home/yifan/.config/albert/org.albert.extension.websearch/{4a151797-bb05-40f7-9249-15b5083635d7}.png",
         "name": "Moegirl",
         "trigger": "moe",
-        "url": "https://zh.moegirl.org/index.php?search=%s"
+        "url": "https://www.google.com/search?q=%s+site%3Azh.moegirl.org"
     },
     {
         "iconPath": "/home/yifan/.local/share/albert/org.albert.extension.websearch/{5f488533-5f6c-4c41-b09b-8c513c8ed83a}.svg",
@@ -114,7 +114,7 @@
         "url": "https://bulbapedia.bulbagarden.net/w/index.php?search=%s"
     },
     {
-        "iconPath": "/home/yifan/.config/albert/org.albert.extension.websearch/{4d4fe0cf-ec2e-4495-8dde-01173c2eca96}.png",
+        "iconPath": "/home/yifan/.config/albert/org.albert.extension.websearch/{7ff6633c-f6d1-4779-8b5d-6e7e71df596f}.png",
         "name": "Pokemon Wiki",
         "trigger": "zhpoke",
         "url": "https://wiki.52poke.com/index.php?search=%s"
@@ -130,5 +130,17 @@
         "name": "MusicBrainz Album",
         "trigger": "musicb",
         "url": "https://musicbrainz.org/search?query=%s&type=release&limit=25&method=indexed"
+    },
+    {
+        "iconPath": "/home/yifan/.config/albert/org.albert.extension.websearch/{0ec57207-ab4d-4533-89cb-445a2d35fcec}.",
+        "name": "一亩三分地",
+        "trigger": "1point",
+        "url": "https://www.google.com/search?q=%s+site%3A1point3acres.com%2Fbbs"
+    },
+    {
+        "iconPath": "/home/yifan/.config/albert/org.albert.extension.websearch/{62f7b950-f134-4fed-ae55-41555f1ae8d5}.",
+        "name": "Yen To USD",
+        "trigger": "yen2usd",
+        "url": "https://www.google.com/search?q=%s+yen+to+usd"
     }
 ]
