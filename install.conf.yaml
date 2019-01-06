@@ -20,11 +20,6 @@
     # tmux
     ~/.tmux/tmux_conf_local:
         path: tmux/tmux_conf_local
-    # albert
-    ~/.config/albert/org.albert.extension.websearch.json:
-        path: albert/org.albert.extension.websearch.json
-    ~/.config/albert.conf:
-        path: albert/albert.conf
     # texlive
     ~/.texlive/texlive.profile:
         path: texlive/texlive.profile

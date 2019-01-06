@@ -1,4 +1,3 @@
-bind y run "tmux save-buffer - | xclip -selection clipboard"
-bind P run "xclip -selection clipboard -o | tmux load-buffer -"
+bind P run "pbpaste | tmux load-buffer -"
 
 # vim: ft=tmux

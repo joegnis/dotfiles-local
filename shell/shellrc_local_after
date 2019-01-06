@@ -1,20 +1,12 @@
-# X11 system clipboard
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+# Intall most first: `brew install most`
+export PAGER="most"
 
-# Tex Live
-export PATH="$PATH:/usr/local/texlive/2017/bin/x86_64-linux"
+## MacPorts
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
-# OpenResty
-export PATH="/usr/local/openresty/nginx/sbin:$PATH"
-
-# ============================================================================
-# => Ubuntu
-# ============================================================================
-# Default editor
-export EDITOR=vim
-
-# Set BROWSER
-export BROWSER="chromium-browser"
+## golang
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=~/ProgramRepo/go-workspace
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # vim: ft=sh
