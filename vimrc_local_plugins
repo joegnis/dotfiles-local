@@ -12,10 +12,3 @@ Plug 'jpalardy/vim-slime'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'jiangmiao/auto-pairs'
-
-" Load some plugins the first time entering insert mode
-augroup load_after_insert_local
-  autocmd!
-  autocmd InsertEnter * call plug#load('YouCompleteMe')
-            \| autocmd! load_after_insert_local
-augroup END
