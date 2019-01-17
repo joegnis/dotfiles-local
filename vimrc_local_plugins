@@ -1,6 +1,6 @@
 " Plugins only installed locally, through vim-plug
 " Coding
-Plug 'Valloric/YouCompleteMe', { 'on': [] }
+"Plug 'Valloric/YouCompleteMe', { 'on': [] }
 
 " UI
 Plug 'itchyny/lightline.vim' " light powerline
