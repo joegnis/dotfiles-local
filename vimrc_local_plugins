@@ -1,7 +1,4 @@
 " Plugins only installed locally, through vim-plug
-" Coding
-"Plug 'Valloric/YouCompleteMe', { 'on': [] }
-
 " UI
 Plug 'itchyny/lightline.vim' " light powerline
 
@@ -11,4 +8,4 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'jiangmiao/auto-pairs'
+Plug 'cohama/lexima.vim'
