@@ -12,4 +12,11 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
+# C/C++
+export CC=clang
+export CXX=clang++
+
+# LLVM
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+
 # vim: ft=sh
