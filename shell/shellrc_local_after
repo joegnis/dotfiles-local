@@ -1,13 +1,19 @@
-# Intall most first: `brew install most`
-export PAGER="most"
+# Paging program to support color manpages. To install: `brew install most`
+if command_exists most; then
+    export PAGER="most"
+fi
 
 ## MacPorts
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+if command_exists port; then
+    export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+fi
 
 ## golang
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=~/ProgramRepo/go-workspace
-export PATH=$PATH:$(go env GOPATH)/bin
+if command_exists go; then
+    export PATH=$PATH:/usr/local/opt/go/libexec/bin
+    export GOPATH=~/ProgramRepo/go-workspace
+    export PATH=$PATH:$(go env GOPATH)/bin
+fi
 
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
