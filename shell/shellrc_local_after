@@ -19,4 +19,9 @@ export CXX=clang++
 # LLVM
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
+# Read Homebrew GitHub access token
+if [ -f ~/.homebrew-token ]; then
+    export HOMEBREW_GITHUB_API_TOKEN=$(<~/.homebrew-token)
+fi
+
 # vim: ft=sh
