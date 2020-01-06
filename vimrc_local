@@ -6,27 +6,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Rainbow Parentheses
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
-let g:rbpt_max = 16
-
 " Slime
 let path_slime_file_dir = $HOME . '/.cache/vim-slime'
 let g:slime_target = "tmux"
@@ -35,6 +14,23 @@ if empty(glob(path_slime_file_dir))
 endif
 let g:slime_paste_file = path_slime_file_dir . '/cache.txt'
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
+
+" lexima
+call lexima#add_rule({'filetype': 'racket', 'char': "'", 'input_after': ''})
+
+" Rainbow (parentheses)
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+        \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+        \   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+	    \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+        \   'separately': {
+        \       '*': 0,
+        \       'racket': {
+	    \           'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold', "start=/'(/ end=/)/ fold"],
+        \       }
+        \   }
+        \}
 
 " lightline
 let g:lightline = {

@@ -4,7 +4,7 @@ Plug 'itchyny/lightline.vim' " light powerline
 
 " Racket
 Plug 'wlangstroth/vim-racket'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'luochen1990/rainbow'
 Plug 'jpalardy/vim-slime'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
