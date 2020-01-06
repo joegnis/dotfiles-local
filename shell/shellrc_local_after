@@ -3,12 +3,12 @@ if command_exists most; then
     export PAGER="most"
 fi
 
-## MacPorts
+# MacPorts
 if command_exists port; then
     export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 fi
 
-## golang
+# golang
 if command_exists go; then
     export PATH=$PATH:/usr/local/opt/go/libexec/bin
     export GOPATH=~/ProgramRepo/go-workspace
@@ -28,6 +28,12 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 # Read Homebrew GitHub access token
 if [ -f ~/.homebrew-token ]; then
     export HOMEBREW_GITHUB_API_TOKEN=$(<~/.homebrew-token)
+fi
+
+# opam (OCaml package manager)
+if command_exists opam; then
+    test -r ~/.opam/opam-init/init.zsh && . ~/.opam/opam-init/init.zsh \
+        > /dev/null 2> /dev/null || true
 fi
 
 # vim: ft=sh
