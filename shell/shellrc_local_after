@@ -22,8 +22,16 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export CC=clang
 export CXX=clang++
 
-# LLVM
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+# LLVM tools
+if [[ -d /usr/local/Cellar/llvm ]]; then
+    if [[ ! -L /usr/local/bin/clang-format ]]; then
+        ln -s "$(brew --prefix llvm)/bin/clang-format" "/usr/local/bin/clang-format"
+    fi
+
+    if [[ ! -L /usr/local/bin/clang-tidy ]]; then
+        ln -s "$(brew --prefix llvm)/bin/clang-tidy" "/usr/local/bin/clang-tidy"
+    fi
+fi
 
 # Read Homebrew GitHub access token
 if [ -f ~/.homebrew-token ]; then
