@@ -36,4 +36,9 @@ if command_exists opam; then
         > /dev/null 2> /dev/null || true
 fi
 
+# youtube-dl
+if command_exists youtube-dl; then
+    alias youtube-dl-best='youtube-dl -f bestvideo+bestaudio'
+fi
+
 # vim: ft=sh
