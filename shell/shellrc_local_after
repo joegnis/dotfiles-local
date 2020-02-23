@@ -33,6 +33,11 @@ if [[ -d /usr/local/Cellar/llvm ]]; then
     fi
 fi
 
+# OpenJDK from HomeBrew
+if [[ -d /usr/local/Cellar/openjdk ]]; then
+    export PATH="/usr/local/opt/openjdk/bin:$PATH"
+fi
+
 # Read Homebrew GitHub access token
 if [ -f ~/.homebrew-token ]; then
     export HOMEBREW_GITHUB_API_TOKEN=$(<~/.homebrew-token)
