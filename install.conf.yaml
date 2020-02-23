@@ -3,28 +3,28 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.dotfiles_local:
-        path: ""
+      path: ""
     ~/.vimrc_local:
     ~/.vimrc_local_plugins:
     ~/.zsh/antigenrc_local:
-        path: zsh/antigenrc_local
+      path: zsh/antigenrc_local
     ~/.shell/shellrc_local_after:
-        path: shell/shellrc_local_after
+      path: shell/shellrc_local_after
     ~/.bashrc_local_before:
     ~/.bash/bashitrc_local:
-        path: bash/bashitrc_local
+      path: bash/bashitrc_local
     # tmux
     ~/.tmux/tmux_conf_local:
-        path: tmux/tmux_conf_local
+      path: tmux/tmux_conf_local
     # texlive
     ~/.texlive/texlive.profile:
-        path: texlive/texlive.profile
+      path: texlive/texlive.profile
     ~/.texlive/template_zh.tex:
-        path: texlive/template_zh.tex
+      path: texlive/template_zh.tex
 
 - shell:
     - [git submodule update --remote dotbot, Updating dotbot]
