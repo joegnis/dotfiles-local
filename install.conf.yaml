@@ -25,6 +25,9 @@
       path: texlive/texlive.profile
     ~/.texlive/template_zh.tex:
       path: texlive/template_zh.tex
+    # prettier.io
+    ~/.prettierrc.yaml:
+      path: config/prettierrc.yaml
 
 - shell:
     - [git submodule update --remote dotbot, Updating dotbot]
