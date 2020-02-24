@@ -36,6 +36,7 @@ fi
 # OpenJDK from HomeBrew
 if [[ -d /usr/local/Cellar/openjdk ]]; then
     export PATH="/usr/local/opt/openjdk/bin:$PATH"
+    export JAVA_HOME="/usr/local/opt/openjdk"
 fi
 
 # Read Homebrew GitHub access token
