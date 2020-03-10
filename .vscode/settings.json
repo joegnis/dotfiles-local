@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "shellrc*": "shellscript",
+    "*zshrc*": "shellscript",
+    "*bashrc*": "shellscript",
+    "*antigenrc*": "shellscript",
+    "*vimrc*": "viml"
+  }
+}
