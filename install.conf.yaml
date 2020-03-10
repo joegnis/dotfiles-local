@@ -28,6 +28,9 @@
     # prettier.io
     ~/.prettierrc.yaml:
       path: config/prettierrc.yaml
+    # html-validate
+    ~/.htmlvalidate.json:
+      path: config/htmlvalidate.json
 
 - shell:
     - [git submodule update --remote dotbot, Updating dotbot]
